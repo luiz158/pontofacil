@@ -17,7 +17,7 @@ public class View {
 	 */
 	private static final Log LOG = LogFactory.getLog(View.class);
 
-	private IconeTray iconeTray = null;
+	private TrayIcon iconeTray = null;
 	private Dialogos dialogos = new Dialogos();
 	private TelaConfiguracao telaConfiguracao = null;
 	private TelaSobre telaSobre = null;
@@ -25,7 +25,7 @@ public class View {
 
 	public View() {
 		try {
-			iconeTray = new IconeTray();
+			iconeTray = new TrayIcon();
 		} catch (Exception exception) {
 			LOG.error("Erro ao incializar o icone em tray", exception);
 

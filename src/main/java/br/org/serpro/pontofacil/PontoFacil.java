@@ -4,6 +4,8 @@
  */
 package br.org.serpro.pontofacil;
 
+import br.org.serpro.pontofacil.view.TrayIcon;
+
 /**
  *
  * @author 72767863587
@@ -17,12 +19,17 @@ public class PontoFacil {
 
     public static void main(String args[]) throws InterruptedException {
 
-        //Para cada periodo
+        TrayIcon trayIcon = new TrayIcon();
 
-        System.out.println("Ola Mundo!");
-        Thread.sleep(10000);
-        System.out.println("Ola Mundo!");
+        SwingWorker worker = new SwingWorker() {
 
-
+            public Object construct() {
+                while (1 != 0) {
+                    System.out.println("Ola Mundo!");
+                    Thread.sleep(10000);
+                }
+            }
+        };
+        worker.start();
     }
 }
