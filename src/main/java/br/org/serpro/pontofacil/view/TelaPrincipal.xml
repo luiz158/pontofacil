@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE panel SYSTEM "thinlet.dtd" >
+<panel columns="2" gap="6" top="10" left="10" right="10" bottom="10">
+<tabbedpane colspan="2">
+	<tab text="Relogio">
+		<panel valign="center" halign="center">
+			<panel columns="2" gap="6" top="10" left="10" right="10"
+				bottom="10">
+				<label name="labelEnt1Turno" text="Entrada 1 Turno" />
+				<textfield name="txtEnt1Turno" columns="20" />
+				<separator colspan="2" />
+				<label name="labelSai1Turno" text="Saida 1 Turno" />
+				<textfield name="txtSai1Turno" columns="20" />
+				<separator colspan="2" />
+				<label name="labelEnt2Turno" text="Entrada 2 Turno" />
+				<textfield name="txtEnt2Turno" columns="20" />
+				<separator colspan="2" />
+				<label name="labelSai2Turno" text="Saida 2 Turno" />
+				<textfield name="txtSai2Turno" columns="20" />
+			</panel>
+		</panel>
+	</tab>
+	<tab text="Configuracao">
+		<panel columns="2" gap="6" top="10" left="10" right="10" bottom="10">
+			<label name="labelLogin" text="Usuário" />
+			<textfield name="txtLogin" columns="30" />
+			<label name="labelSenha" text="Senha" />
+			<textfield name="txtSenha" columns="30" />
+		</panel>
+	</tab>
+</tabbedpane>
+	<button name="btnOk" text="Confirmar" />
+	<button name="btnCancel" text="Cancelar" />
+</panel>
